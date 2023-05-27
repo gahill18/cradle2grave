@@ -1,2 +1,4 @@
 # cradle2grave
-another side project i'll inevitably abandon, this time a formal character interaction model
+
+Another side project I'll inevitably abandon, this time a formal character interaction model.
+Inspired heavily by Crusader Kings and other interaction based games.
