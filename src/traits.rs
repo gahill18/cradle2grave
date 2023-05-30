@@ -1,0 +1,290 @@
+#[derive(Debug)]
+pub enum Traits {
+    Prsn(Personality),
+    Educ(Education),
+    Cong(Congenital),
+    Phys(Physical),
+    Levl(Leveled),
+    Life(Lifestyle),
+    Lead(Leader),
+    Infm(Infamy),
+    Cope(Coping),
+    Chld(Childhood),
+    Hlth(Health),
+    Sick(Disease),
+    Dyns(Dynasty),
+    Desc(Descendent),
+    Deci(Decision),
+    Evnt(Event),
+    Cort(Court),
+}
+
+impl Traits {
+    pub fn compatible(&self, compto: Traits) -> bool {
+        todo!()
+    }
+    pub fn brave() -> Traits {
+        Traits::Prsn(Personality::Brave)
+    }
+}
+
+#[derive(Debug)]
+enum Personality {
+    Brave,
+    Craven,
+    Calm,
+    Wrathful,
+    Chaste,
+    Lustful,
+    Content,
+    Ambitious,
+    Diligent,
+    Lazy,
+    Fickle,
+    Stubborn,
+    Forgiving,
+    Vengeful,
+    Generous,
+    Greedy,
+    Gregarious,
+    Shy,
+    Honest,
+    Deceitful,
+    Humble,
+    Arrogant,
+    Just,
+    Arbitrary,
+    Patient,
+    Impatient,
+    Temperate,
+    Gluttonous,
+    Trusting,
+    Paranoid,
+    Zealous,
+    Cynical,
+    Compassionate,
+    Callous,
+    Sadistic,
+}
+
+#[derive(Debug)]
+enum Education {
+    Diplomacy(u8),
+    Martial(u8),
+    Stewardship(u8),
+    Intrigue(u8),
+    Learning(u8),
+    Prowess(u8),
+}
+
+#[derive(Debug)]
+enum Congenital {
+    Melancholic,
+    Lunatic,
+    Possessed,
+    Fecund,
+    Albino,
+    Lisping,
+    Stuttering,
+    Pureblood,
+    Giant,
+    Scaly,
+    Clubfoot,
+    Dwarf,
+    Hunchback,
+    Sterile,
+    Wheezing,
+    Spindly,
+    Bleeder,
+    Ugly(u8),
+    Beautiful(u8),
+    Stupid(u8),
+    Smart(u8),
+    Frail(u8),
+    Robust(u8),
+}
+
+#[derive(Debug)]
+enum Physical {
+    Shrewd,
+    Strong,
+    Scarred,
+    Oneeyed,
+    Onelegged,
+    Disfigured,
+    Weak,
+    Dull,
+    Eunuch,
+}
+#[derive(Debug)]
+enum Leveled {
+    Blademaster,
+    Reveler,
+    Physician,
+    Pilgrim,
+    Mystic,
+    Venator,
+    Falconer,
+    Wanderor,
+    Seasoned,
+    Bow,
+    Foot,
+    Horse,
+    Wit,
+}
+#[derive(Debug)]
+enum Lifestyle {
+    August,
+    Diplomat,
+    Patriarch,
+    Gallant,
+    Overseer,
+    Strategist,
+    Administrator,
+    Architect,
+    Avaricious,
+    Schemer,
+    Seducer,
+    Torturer,
+    Scholar,
+    Theologian,
+    WholeOfBody,
+    Celibate,
+    Herbalist,
+    Gardener,
+}
+#[derive(Debug)]
+enum Leader {
+    Aggressive,
+    Flexible,
+    Forder,
+    HolyWarrior,
+    Logistician,
+    Engineer,
+    Organizer,
+    Reaver,
+    Unyielding,
+    Cautious,
+    Reckless,
+    TerrainExpert, // should include (Terrain)
+    WinterSoldier,
+}
+#[derive(Debug)]
+enum Infamy {
+    Adulterer,
+    Fornicator,
+    Deviant,
+    Kinslayer,
+    Incestuous,
+    Sodomite,
+    Witch,
+    Cannibal,
+    Excommunicated,
+    Murderer,
+}
+#[derive(Debug)]
+enum Coping {
+    Drunkard,
+    Flagellant,
+    ComfortEater,
+    Contrite,
+    Improvident,
+    Inappetetic,
+    Reclusive,
+    Irritable,
+    Rakish,
+    Hashishiyah,
+    Profligate,
+    Confider,
+    Journaller,
+    Athletic,
+}
+#[derive(Debug)]
+enum Childhood {
+    Bossy,
+    Charming,
+    Curious,
+    Pensive,
+    Rowdy,
+}
+#[derive(Debug)]
+enum Health {
+    Hurt(u8),
+    Sickly,
+    Impotent,
+    Infirm,
+    Incapable,
+    Inbred,
+    Maimed,
+    Blind,
+}
+#[derive(Debug)]
+enum Disease {
+    Ill(u8),
+    Plagued,
+    Cancer,
+    Consumption,
+    GreatPox,
+    Gout,
+    Leprosy,
+    LoversPox,
+    Pneumonia,
+    Smallpox,
+    Typhus,
+}
+#[derive(Debug)]
+enum Dynasty {
+    Bastard,
+    BastardFounder,
+    BornPurple,
+    ConcubineChild,
+    Denounced,
+    Disinherited,
+    DisputedHeritage,
+    LegitimizedBastard,
+    Reincarnation,
+    Twin,
+    WildOat,
+}
+#[derive(Debug)]
+enum Descendent {
+    Sayyid,
+    Paragon,
+    Savior,
+}
+#[derive(Debug)]
+enum Decision {
+    Augustus,
+    Chakravarti,
+    GreatestKhan,
+    Hajji,
+}
+#[derive(Debug)]
+enum Event {
+    Adventurer,
+    Berserker,
+    Devoted,
+    Heresiarch,
+    HolyMonarch,
+    OrderMember,
+    PeasantLeader,
+    Pregnant,
+    Poet,
+    Raider,
+    Shieldmaden,
+    Varangian,
+    Crusader,
+    Mujahid,
+    FaithWarrior,
+    Loyal,
+    Disloyal,
+}
+
+#[derive(Debug)]
+enum Court {
+    Diplomatic,
+    Warlike,
+    Administrative,
+    Intrigue,
+    Scholarly,
+}
